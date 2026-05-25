@@ -12,15 +12,17 @@ export const RouterNavigation = () => {
   return (
     <BrowserRouter>
       <HeaderNavigation />
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/index" element={<Index />} />
-        <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/curriculum" element={<Curriculum />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Services" element={<Services />} />
-      </Routes>
-      <hr />
+      <section className="content">
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/index" element={<Index />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/curriculum" element={<Curriculum />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Services" element={<Services />} />
+        </Routes>
+      </section>
+
       <Footer />
     </BrowserRouter>
   );
