@@ -4,9 +4,9 @@ import {RouterNavigation} from "./router/RouterNavigation";
 
 function App() {
   return (
-    <>
+    <div className="layout">
       <RouterNavigation />
-    </>
+    </div>
   );
 }
 
