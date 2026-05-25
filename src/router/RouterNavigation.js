@@ -7,6 +7,7 @@ import { Contact } from "../components/Contact";
 import { Services } from "../components/Services";
 import { HeaderNavigation } from "../components/layout/HeaderNavigation";
 import { Footer } from "../components/layout/Footer";
+import { Project } from "../components/Project";
 
 export const RouterNavigation = () => {
   return (
@@ -20,6 +21,8 @@ export const RouterNavigation = () => {
           <Route path="/curriculum" element={<Curriculum />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Services" element={<Services />} />
+          <Route path="/project/:name" element={<Project />} />
+          <Route path="*" element={<h1>404 - Not found</h1>} />
         </Routes>
       </section>
 
